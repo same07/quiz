@@ -14,7 +14,7 @@
 
 
 <ion-content>
-    <ion-card *ngIf="!isQuizStart && currentSequence == datas.length">
+    <!-- <ion-card *ngIf="!isQuizStart && currentSequence == datas.length">
         <ion-card-header>
             Congratulations
         </ion-card-header>
@@ -24,7 +24,7 @@
         <h2 text-center>
             {{score}} / {{datas.length}}
         </h2>
-    </ion-card>
+    </ion-card> -->
     <button ion-button color="primary" round block (click)="startQuiz()" *ngIf="!isQuizStart">
         Start Quiz
     </button>

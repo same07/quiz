@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ViewQuizSummaryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>Summary</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            Your Score 
+        </ion-item>
+        <ion-item>
+            {{score}}
+        </ion-item>
+    </ion-list>
+    <ion-list *ngFor="let item of datas">
+        <div *ngIf="item.type == 'text'">
+            <ion-item text-wrap>
+                {{item.pertanyaan}}
+            </ion-item>
+            <div *ngFor="let jwaban of item.pilihan">
+                <ion-item *ngIf="jwaban.value == 1">
+                    {{jwaban.content}}
+                </ion-item>
+            </div>
+        </div>
+        <div *ngIf="item.type == 'image'">
+            <ion-item text-wrap>
+                {{item.pertanyaan}}
+            </ion-item>
+            <div *ngFor="let jwaban of item.pilihan">
+                <ion-card *ngIf="jwaban.value == 1">
+                    <img [src]="jwaban.content">
+                </ion-card>
+            </div>
+        </div>
+    </ion-list>
+</ion-content>

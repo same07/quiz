@@ -58,6 +58,7 @@ export class ViewQuizPage {
         if(this.datas[this.currentSequence] == undefined){
             
             this.isQuizStart = false;
+            this.navCtrl.push('view-quiz-summary',{'data':this.datas,'score' :this.score});
             return false;
         }
         let modal = this.modalCtrl.create('view-quiz-detail', { data: this.datas[this.currentSequence] });
