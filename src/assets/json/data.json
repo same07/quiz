@@ -63,6 +63,37 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "name" : "Operating System",
+                    "materi" : [
+                        {
+                            "judul" : "Windows 7",
+                            "image" : "",
+                            "content" : ""
+                        },
+                        {
+                            "judul": "Windows 8",
+                            "image": "",
+                            "content": ""
+                        },
+                        {
+                            "judul": "Windows 10",
+                            "image": "",
+                            "content": ""
+                        }
+                    ],
+                    "quiz" : []
+                }
+            ]
+        },
+        {
+            "name" : "Cooking",
+            "sub" : [
+                {
+                    "name" : "Belajar Memasak",
+                    "materi" : [],
+                    "quiz" : []
                 }
             ]
         }
