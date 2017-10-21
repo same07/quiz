@@ -1,0 +1,70 @@
+{
+    "data" : [
+        {
+            "name" : "Komputer",
+            "sub" : [
+                {
+                    "name" : "Programming",
+                    "materi" : [
+                        {
+                            "judul" : "PHP",
+                            "image" : "http://via.placeholder.com/350x150",
+                            "content" : "PHP adalah singkatan dari Hypertext Prepocessor, yaitu bahasa pemrograman yang digunakan secara luas untuk penanganan pembuatan dan pengembangan sebuah situs web dan bisa digunakan bersamaan dengan HTML. PHP diciptakan oleh Rasmus Lerdorf pertama kali tahun 1994. Pada awalnya PHP adalah singkatan dari 'Personal Home Page Tools'. Selanjutnya diganti menjadi FI ('Forms Interpreter'). Sejak versi 3.0, nama bahasa ini diubah menjadi 'PHP: Hypertext Prepocessor' dengan singkatannya 'PHP'. PHP versi terbaru adalah versi ke-5. Berdasarkan survey Netcraft pada bulan Desember 1999, lebih dari sejuta website menggunakan PHP, di antaranya adalah NASA, Mitsubishi, dan RedHat"
+                        },
+                        {
+                            "judul" : "Javascript",
+                            "image" : "http://via.placeholder.com/350x150",
+                            "content" : "Javascript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Internet Explorer (IE), Mozilla Firefox, Netscape dan Opera."
+                        }
+                    ],
+                    "quiz" : [
+                        {
+                            "pertanyaan" : "Apa kepanjangan dari PHP?",
+                            "type" : "text",
+                            "pilihan" : [
+                                {
+                                    "value" : 1,
+                                    "content" : "Hypertext Prepocessor"
+                                },
+                                {
+                                    "value" : 0,
+                                    "content" : "Pemberi harapan palsu"
+                                },
+                                {
+                                    "value" : 0,
+                                    "content" : "Paket hemat pulsa"
+                                },
+                                {
+                                    "value" : 0,
+                                    "content" : "Tidak mempunyai singkatan"
+                                }
+                            ]
+                        },
+                        {
+                            "pertanyaan": "1 + 1 = ?",
+                            "type": "image",
+                            "pilihan": [
+                                {
+                                    "value": 0,
+                                    "content": "http://via.placeholder.com/350x150?text=1"
+                                },
+                                {
+                                    "value": 1,
+                                    "content": "http://via.placeholder.com/350x150?text=2"
+                                },
+                                {
+                                    "value": 0,
+                                    "content": "http://via.placeholder.com/350x150?text=3"
+                                },
+                                {
+                                    "value": 0,
+                                    "content": "http://via.placeholder.com/350x150?text=4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

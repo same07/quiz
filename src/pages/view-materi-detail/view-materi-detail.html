@@ -1,0 +1,29 @@
+<!--
+  Generated template for the ViewMateriDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>{{data.judul}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-card *ngIf="data.image != undefined">
+        <img [src]="data.image">
+    </ion-card>
+
+    <ion-list>
+        <ion-list-header>
+            {{data.judul}}
+        </ion-list-header>
+        <ion-item text-wrap>
+            <div [innerHtml]="data.content"></div>
+        </ion-item>
+    </ion-list>
+</ion-content>

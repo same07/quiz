@@ -1,0 +1,39 @@
+<!--
+  Generated template for the ViewQuizDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title></ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <ion-item text-wrap>
+            {{data.pertanyaan}}
+        </ion-item>
+    </ion-list>
+
+    <ion-list *ngIf="data.type == 'text'" radio-group [(ngModel)]="data.jawaban">
+        <ion-item *ngFor="let item of data.pilihan" text-wrap>
+            <ion-label>{{item.content}}</ion-label>
+            <ion-radio [value]="item"></ion-radio>
+        </ion-item>
+    </ion-list>
+
+    <div *ngIf="data.type == 'image'">
+        <ion-card *ngFor="let item of data.pilihan" (click)="selectImage(item)">
+            <img [src]="item.content">
+        </ion-card>
+    </div>
+
+    <button ion-button color="primary" block round (click)="save()" *ngIf="data.jawaban != undefined && data.type =='text'">
+        Submit
+    </button>
+</ion-content>
