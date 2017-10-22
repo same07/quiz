@@ -17,8 +17,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ViewSubCategoryPage {
     datas : any;
+    type : any;
     constructor(public navCtrl: NavController, public navParams: NavParams) {
         this.datas = this.navParams.get('data');
+        this.type = this.navParams.get('type');
     }
 
     select(item){

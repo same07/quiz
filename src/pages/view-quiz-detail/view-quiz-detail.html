@@ -14,11 +14,11 @@
 
 
 <ion-content>
-    <ion-list>
-        <ion-item text-wrap>
-            {{data.pertanyaan}}
-        </ion-item>
-    </ion-list>
+    <ion-card>
+
+        <div [innerHtml]="data.pertanyaan"></div>
+
+    </ion-card>
 
     <ion-list *ngIf="data.type == 'text'" radio-group [(ngModel)]="data.jawaban">
         <ion-item *ngFor="let item of data.pilihan" text-wrap>
